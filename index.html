@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
 
-    <title>Week 4</title>
+    <title>Week 6, Part 2</title>
 
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,7 +18,135 @@
   </head>
 
   <body>
-    <a href="https://getbootstrap.com/" target="_blank">https://getbootstrap.com/</a>
-	</body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Cuco Press</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExample01">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown01">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-md-0">
+          <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+        </form>
+      </div>
+    </nav>
+
+    <!-- Conainter -->
+    <main role="main" class="container">
+      <div class="starter-template">
+        <div class="container">
+
+          <!-- Title Block -->
+          <div class="row">
+            <div class="col">
+              <h3>Custom</h3>
+              <h1>Cold Pressed Juices</h1>
+              <p class="lead">Made with 100% Organic and Locally Grown Produce.</p>
+            </div>
+          </div>
+
+          <!-- Second Row -->
+          <div class="row">
+
+            <!-- Create Your Own Juice Button -->
+            <div class="col">
+              <h1>Create Your Own Juice</h1>
+              <button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal">Start</button>
+            </div>
+
+            <!-- Output Juice Creation -->
+
+
+            <div class="col">
+              <div id="output">
+                <h1>Name, Your Juice is Ready!</h1>
+                <h3>What's Inside:</h3>
+                  <ul>
+                    <li>Fruit</li>
+                    <li>Diet</li>
+                    <li>:insertX:</li>
+                    <li>:insertY:</li>
+                    <li>:insertZ:</li>
+                  </ul>
+              </div>
+            </div>
+
+          <!-- End of row -->
+          </div>
+
+          <!-- End of Container -->
+        </div>
+      </div>
+    </main><!-- /.container -->
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')</script><script src="/docs/4.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
+
+  </body>
+
+
+
+
+  <!-- Pop Up Window -->
+  <div class="modal" tabindex="-1" role="dialog" id="myModal">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Let's get your juice ready...</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+
+        <!-- Modal Content -->
+        <div class="modal-body">
+          <p class="lead"></p>
+          <div class="form-group">
+            <label for="customName">Your Name</label>
+            <input id="customName" type="text" class="form-control" placeholder="enter your name"><br>
+          </div>
+          <div>
+            <label for="customFruit">Favorite Fruit</label>
+            <input id="customFruit" type="text" class="form-control" placeholder="Watermelon"><br>
+          </div>
+          <div>
+            <label for="customDiet">Second Favorite Fruit</label>
+            <input id="customDiet" type="text" class="form-control" placeholder="Tangerine"><br>
+          </div>
+        </div>
+
+        <!-- Footer Buttons -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary randomize" onClick="displayJuice()">Brew</button>
+        </div>
+
+        <!-- End of Modal -->
+      </div>
+    </div>
+  </div>
 
 </html>
