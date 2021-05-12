@@ -21,7 +21,7 @@
 
     <!-- Navigation -->
     <nav class="navbar navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">Cuco Press</a>
+      <a class="navbar-brand" href="#"><img class="mini" src="images/cuco3.png" alt="Cuco Juice Small Logo"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -40,9 +40,9 @@
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
             <div class="dropdown-menu" aria-labelledby="dropdown01">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
+              <a class="dropdown-item" href="#">Create Your Juice</a>
+              <a class="dropdown-item" href="#">Our Mission</a>
+              <a class="dropdown-item" href="#">View Testimony</a>
             </div>
           </li>
         </ul>
@@ -60,9 +60,7 @@
           <!-- Title Block -->
           <div class="row">
             <div class="col">
-              <h3>Custom</h3>
-              <h1>Cold Pressed Juices</h1>
-              <p class="lead">Made with 100% Organic and Locally Grown Produce.</p>
+              <img class="logo" src="images/cuco.png" alt="Cuco Juice Logo">
             </div>
           </div>
 
@@ -70,38 +68,42 @@
           <div class="row">
 
             <!-- Create Your Own Juice Button -->
-            <div class="col">
-              <h1>Create Your Own Juice</h1>
+            <div class="col" id="left">
+              <h1 class="create">Create Your Own<br>Cold Pressed Juice</h1>
               <button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal">Start</button>
             </div>
 
-            <!-- Output Juice Creation -->
+            <!-- Mission Statement -->
 
-
-            <div class="col">
-
-              <div id="output">
-                <h1>Name, Your Juice is Ready!</h1>
-                <h3>What's Inside:</h3>
-                  <ul>
-                    <li>Fruit</li>
-                    <li>Diet</li>
-                    <li>:insertX:</li>
-                    <li>:insertY:</li>
-                    <li>:insertZ:</li>
-                  </ul>
-              </div>
+            <div class="col" id="right">
+              <h1 class="complete">Our Mission</h1>
+              <p>All of our ingredients are 100% Certified Organic and locally-grown. Our goal is to support small business owners while providing customers with fresh, custamizable juices - created with your taste and diet goals in mind.</p><br><br>
             </div>
 
-          <!-- End of row -->
-          </div>
+          </div> <!-- End of row -->
+
+          <!-- Third Row - Output Juice Creation -->
+          <div class="row">
+
+            <!-- Text Output -->
+            <div class="col" id="bottom">
+              <div id="output">
+                <h1 class="complete">Your Juice is Ready!</h1><br>
+                <img class="juice" src="images/juice.png" alt="Custom Cold Pressed Juice">
+              </div>
+              <p class="story"></p>
+            </div>
+
+
+          </div> <!-- End of row -->
+
 
           <!-- End of Container -->
         </div>
       </div>
     </main><!-- /.container -->
 
-    <p class="story"></p>
+
 
     <!-- Pop Up Window -->
     <div class="modal" tabindex="-1" role="dialog" id="myModal">
@@ -119,7 +121,7 @@
             <p class="lead"></p>
             <div class="form-group">
               <label for="customName">Your Name</label>
-              <input id="customName" type="text" class="form-control" placeholder="enter your name"><br>
+              <input id="customName" type="text" class="form-control" placeholder="Your Name"><br>
             </div>
             <div>
               <label for="customFruit">Favorite Fruit</label>
@@ -134,7 +136,7 @@
           <!-- Footer Buttons -->
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary randomize" onClick="displayJuice()">Brew</button>
+            <button type="button" class="btn btn-primary randomize" onClick="displayJuice()" data-dismiss="modal">Brew</button>
           </div>
 
 

@@ -3,6 +3,10 @@ function displayJuice() {
   output.style.display = "block";
 }
 
+
+
+
+
 const customName = document.getElementById('customName');
 const customFruit = document.getElementById('customFruit');
 const customDiet = document.getElementById('customDiet');
@@ -14,8 +18,8 @@ function randomValueFromArray(array){
   return array[random];
 }
 
-let storyText = "This delicious Fruit juice was made personally for Name! It's made with 100% Organic and locally-grown, fresh ingredients. What's inside: Fruit, Diet, :insertX:, :insertY:, and :insertZ:.";
-let insertX = ['Raspberry','Strawberry','Blueberry','Blackberry', 'Cranberry'];
+let storyText = "This delicious Fruit and Diet juice was made personally for Name! It's made with 100% Organic and locally-grown, fresh ingredients. Wondering what else is inside? Yummy :insertX:, Citrus-y :insertY:, and Delicious :insertZ:.";
+let insertX = ['Raspberries','Strawberries','Blueberries','Blackberries', 'Cranberries'];
 let insertY = ['Orange','Lemon','Lime','Tangerine', 'Grapefruit', 'Clementine'];
 let insertZ = ['Papaya','Mango','Peach','Pineapple', 'Pomegranate', 'Lychee'];
 
@@ -50,5 +54,6 @@ function result() {
 
   console.log( newStory );
 
+  story.textContent = newStory;
   story.style.visibility = 'visible';
 }
