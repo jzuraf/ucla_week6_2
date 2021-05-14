@@ -5,8 +5,6 @@ function displayJuice() {
 
 
 
-
-
 const customName = document.getElementById('customName');
 const customFruit = document.getElementById('customFruit');
 const customDiet = document.getElementById('customDiet');
@@ -57,3 +55,9 @@ function result() {
   story.textContent = newStory;
   story.style.visibility = 'visible';
 }
+
+
+
+
+
+$('.carousel').carousel()
