@@ -5,6 +5,7 @@ function displayJuice() {
   output.style.display = "block";
 }
 
+
 // Generate Juice Story
 
 const customName = document.getElementById('customName');
@@ -60,6 +61,15 @@ function result() {
 
 
 
-
+// Let carousel work
 
 $('.carousel').carousel()
+
+// Hide forms after submit
+
+$(document).ready(function() {
+    $("#myform").submit(function(e) {
+        $("#first").hide();
+        $("#second").show();
+    });
+});
