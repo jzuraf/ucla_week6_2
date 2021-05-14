@@ -31,20 +31,6 @@
           <li class="nav-item active">
             <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#">Disabled</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-            <div class="dropdown-menu" aria-labelledby="dropdown01">
-              <a class="dropdown-item" href="#">Create Your Juice</a>
-              <a class="dropdown-item" href="#">Our Mission</a>
-              <a class="dropdown-item" href="#">View Testimony</a>
-            </div>
-          </li>
         </ul>
         <form class="form-inline my-2 my-md-0">
           <input class="form-control" type="text" placeholder="Search" aria-label="Search">
@@ -113,14 +99,7 @@
               Our goal is to support small business owners while providing customers with fresh, custamizable juices, created with your taste and diet goals in mind.</p><br><br>
 
 
-            <!-- Text Output -->
-            <div class="col" id="bottom">
-              <div id="output">
-                <h1 class="complete">Your Juice is Ready!</h1><br>
-                <img class="juice" src="images/juice.png" alt="Custom Cold Pressed Juice">
-              </div>
-              <p class="story"></p>
-            </div>
+
 
 
 
@@ -162,10 +141,19 @@
             </div>
           </div>
 
+          <!-- Juice Story Output -->
+          <div class="col" id="bottom">
+            <div id="output">
+              <h1 class="complete">Your Juice is Ready!</h1><br>
+              <img class="juice" src="images/juice.png" alt="Custom Cold Pressed Juice">
+            </div>
+            <p class="story"></p>
+          </div>
+
           <!-- Footer Buttons -->
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary randomize" onClick="displayJuice()" data-dismiss="modal">Brew</button>
+            <button type="button" class="btn btn-primary randomize" onClick="displayJuice()">Brew</button>
           </div>
 
 

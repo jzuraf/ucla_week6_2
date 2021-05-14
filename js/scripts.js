@@ -1,9 +1,11 @@
+// Output 'Juice is Ready' and Random Image
+
 function displayJuice() {
   var output = document.getElementById("output");
   output.style.display = "block";
 }
 
-
+// Generate Juice Story
 
 const customName = document.getElementById('customName');
 const customFruit = document.getElementById('customFruit');
